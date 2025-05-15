@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background: #212121;
+}
+
+nav{
+    background: white;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.two .gender{
+    color: #212121;
+}
+
+/* Media Queries - Mobile First Apparoach */
+
+/* Mobiles */
+
+@media (min-width:300px){
+    nav img{
+        height: 5vh;
+        width: auto;
+        margin-right: 1rem;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        padding: 2vh 0;
+    }
+    nav h3{
+        color: #212121;
+        font-weight: bolder;
+    }
+    .one h4,p{
+        text-align: center;
+        padding: 1.5vh 0;
+    }
+    .one h4{
+        margin-top: 5vh;
+    }
+    .two{
+        background: white;
+        padding: 1.5rem;
+        width: 70%;
+    /* To Create A Card */
+        margin: 5vh auto;
+        border-radius: 12px;
+    }
+    .two label{
+        color: #212121;
+        font-size: 1.1rem;
+    }
+    .two input[type="text"]{
+        padding: 0.8rem;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #212121;
+        font-size: 1.2rem;
+        width: 90%;
+    }
+    .two input[type="radio"], input[type="checkbox"]{
+        margin-right: 1rem;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    .checkboxes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  
+    }
+    .button{
+        background: #212121;
+        font-weight: bold;
+        outline: none;
+        border: none;
+        width: 90%;
+        padding: 0.9rem;
+        border-radius: 12px;
+        margin-top: 3vh;
+    }
+    .equipmentlist h3{
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .card{
+        background: white;
+        border-radius: 12px;
+        padding: 1rem;
+        margin: 1.5rem;
+    }
+    .segment1, .segment2{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .segments h3{
+        color: #212121;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .segment1 img{
+        width: 70%;
+    }
+
+    .segment2{
+        background: #212121;
+    }
+
+    .segment2 h3{
+        color: azure;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .segment2 img{
+        width: 70%;
+    }
+}
+
+/* Mobile Version Done */
+
+/* Tab Version */
+
+@media (min-width:700px){
+    .one h4,p{
+        font-size: 1.6rem;
+    }
+    .equipmentlist h3{
+        font-size: 1.6rem;
+    }
+    .cards{
+        margin: 4.5rem;
+    }
+    .segments{
+        display: flex;
+    }
+    .segment1, .segment2{
+        width: 50%;
+    }
+}
+
+/* TAb Version End */
+
+/* PC Version */
+
+@media (min-width:900px){
+
+    nav{
+        justify-content: left;
+        padding-left: 10vh;
+    }
+
+    .one h4,p{
+    display: none;
+    }
+
+    .hero{
+        padding-top: 3 vh;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 80%;
+        margin: 0, auto;
+        justify-content: space-between;
+    }
+
+    .two label, input[type="text"]{
+        font-size: 0.7rem;
+    }
+
+    .two {
+        padding: auto;
+        margin-left: 2rem;
+        width: 24rem;
+    }
+
+    .equipmentlist h3{
+        font-size: 2rem;
+        margin-top: 5vh;
+    }
+
+    .cards{
+         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .segments .segment1{
+        width: 50%;
+    }
+    .segments .segment2{
+        width: 50%;
+    }
+}
